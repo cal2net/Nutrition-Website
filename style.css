@@ -46,15 +46,19 @@ height: 70px;
 margin-top: 20px;
 margin-right: auto;
 border: none;
-background-color: rgb(224, 224, 224);
+background-color: #e0e0e0;
 border-radius: 3px;
-height: 23px;
+height: 27px;
 font-size: 15px;
 width: 145px;
+border: solid 1px #ffffff00;
+font-family: 'Montserrat';
 }
 
 .sidebar-search:focus {
     border:#2389ff solid 1px;
+    outline: none;
+    box-shadow: #00000026 1.95px 1.95px 2.6px;
 }
 
 .sidebar-spacing {
@@ -105,10 +109,10 @@ display: block;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 3px;
     background-color: #ffff;
-}  
+} 
 
 .mc-h1 {
     width: 100%; text-align: center; height: 50px; 
