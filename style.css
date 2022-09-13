@@ -20,6 +20,8 @@ body {
     font-size: 17.5px;
 }
 
+.nav-links {}
+
 nav {
 background-color: #255d9c;
 height: 70px;
@@ -44,11 +46,15 @@ height: 70px;
 margin-top: 20px;
 margin-right: auto;
 border: none;
-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+background-color: rgb(224, 224, 224);
 border-radius: 3px;
 height: 23px;
 font-size: 15px;
 width: 145px;
+}
+
+.sidebar-search:focus {
+    border:#2389ff solid 1px;
 }
 
 .sidebar-spacing {
@@ -63,7 +69,7 @@ flex-direction: column;
 }
 
 .side-header {
-    font-weight: 500;
+    font-weight: 600;
     margin: 5px;
     color: #333;
 }
@@ -77,10 +83,19 @@ display: block;
     text-decoration: none;
     margin: 1.5px;
     display: block;
+    max-width: 70%;
+    transition: all 0.5s ease;
+    padding: 7px;
+    font-weight: 500;
 }
 
 .side-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #2389ff;
+    background-color: #82bcffb6;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 7px;
 }
 
 .main-content {
@@ -95,11 +110,16 @@ display: block;
     background-color: #ffff;
 }  
 
+.mc-h1 {
+    width: 100%; text-align: center; height: 50px; 
+}
+
 .mc-par {
     width: 780px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .info {
