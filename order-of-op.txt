@@ -1,0 +1,3 @@
+create templates for everything
+gather info for learn page
+Lastly polish everything up with animations and make pretty with svgs and stuff
