@@ -16,7 +16,7 @@ body {
     margin-left: 5px;
     margin-right: 5px;
     line-height: 70px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 17.5px;
 }
 
@@ -34,18 +34,35 @@ width: 100%;
     flex-direction: row;
     height: initial;
     padding-top: 70px;
-    padding-left: 200px;
+    padding-left: 220px;
 }
 
 .sidebar {
     font-family: 'Montserrat';
     height: 100%;
     display: block;
-    width: 200px;
+    width: 220px;
     box-shadow: #0000003d 0px 3px 8px;
     background-color: #ffff;
     position: fixed;
     margin-top: 70px;
+    overflow-y:scroll;
+    direction: ltr;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #cfcfcf;
+}
+
+.sidebar::-webkit-scrollbar {
+    background-color: #ffffff00;
+    color: #333;
+    width: 12px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #cfcfcf00;
+    border-radius: 5px;
 }
 
 .sidebar-search {
@@ -56,7 +73,7 @@ background-color: #e0e0e0;
 border-radius: 3px;
 height: 27px;
 font-size: 15px;
-width: 145px;
+width: 152px;
 border: solid 1px #ffffff00;
 font-family: 'Montserrat';
 }
@@ -76,6 +93,7 @@ font-family: 'Montserrat';
 margin-left: 20px;
 display: flex;
 flex-direction: column;
+padding-bottom: 90px;
 }
 
 .side-header {
@@ -93,10 +111,11 @@ display: block;
     text-decoration: none;
     margin: 1.5px;
     display: block;
-    max-width: 70%;
+    max-width: 145px;
     transition: all 0.5s ease;
     padding: 7px;
     font-weight: 500;
+
 }
 
 .side-link:hover {
@@ -183,6 +202,18 @@ display: block;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
+}
+
+.doc-top {
+    background-image: url(/images/document-intro.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.doc-top > h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(38 38 38 / 86%)
 }
 
 /* Homepage CSS */
