@@ -216,6 +216,82 @@ display: block;
     text-shadow: 2px 2px 3px rgb(38 38 38 / 86%)
 }
 
+.community-intro {
+    width: 100%;
+    background-image: url('/images/healthy.jpg');
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+.intro-text {
+    backdrop-filter: url(filters.svg#filter) blur(3px) brightness(0.5);
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 475px;
+    justify-content: center;
+}
+
+.intro-text > h1, .intro-text > p {
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+.intro-text > p {
+    font-weight: 300;
+}
+
+.intro-btn {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    color: black;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.intro-btn:hover {
+    background-color: #cccccc;
+}
+
+.community-links {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 475px;
+    display: flex;
+    flex-direction: row;
+}
+
+.community-link {
+    border: 1px solid #cccccc;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    margin-top: 136.5px;
+}
+
+.community-link:hover {
+    border: 1px solid #cccccc00;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 /* Homepage CSS */
 
 .home-content {

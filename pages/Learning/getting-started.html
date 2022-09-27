@@ -7,6 +7,7 @@
     <title>Nutrition - Learn</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/css/all.css">
+    <script src="/main.js"></script>
 </head>
 <body>
     <nav>
@@ -18,8 +19,8 @@
         </div>
     </nav>
     <div class="sidebar">
-        <div class="side-links">
-            <input class="sidebar-search" type="textbox" value="" placeholder="Search">
+        <div id="myUL" class="side-links">
+            <input onkeyup="myFunction()" class="sidebar-search" id="myInput" type="textbox" value="" placeholder="Search">
             <a style="margin-top: 20px; display: block;" href="" class="side-link">Getting Started</a>
             <a style="display: block;" href="/pages/Learning/basic-tips.html" class="side-link">Basic Tips</a>
             <div class="sidebar-spacing"></div>
@@ -59,6 +60,7 @@
                 <div class="sidebar-spacing"></div>
                 <a href="" class="side-link">Simple</a>
                 <a href="" class="side-link">Complex</a>
+                <a href="" class="side-link">Fiber</a>
             </div>
         </div>
     </div>
