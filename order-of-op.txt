@@ -1,4 +1,5 @@
 create templates for everything
 gather info for learn page
+add toolbar for documents like highlighting and what not
 add diet rating to each diet on plans page and learning diets
 Lastly polish everything up with animations and make pretty with svgs and stuff

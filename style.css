@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     box-sizing: border-box;
@@ -20,7 +25,9 @@ body {
     font-size: 17.5px;
 }
 
-.nav-links {}
+.nav-links {
+    margin-left: 10px;
+}
 
 nav {
 background-color: #548fdb;
@@ -293,6 +300,34 @@ display: block;
 .community-link:hover {
     border: 1px solid #cccccc00;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.toolbar {
+    padding: 3px;
+    border-radius: 4px;
+    box-shadow: #0000003d 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80%;
+    margin-top: 195px;
+    height: 145px;
+    padding-bottom: 7px;
+    position: fixed;
+}
+
+.tool {
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+    font-size: 19px;
+    width: 30px;
+    border-radius: 3px;
+}
+
+.tool:hover {
+    color: #6b6b6b;
+    background-color: rgb(216, 216, 216);
 }
 
 /* Homepage CSS */
