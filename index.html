@@ -6,23 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrition - Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
 </head>
 <body>
-    <nav>
-        <a href="/index.html" class="nav-link">Home</a>
-        <a href="/pages/community.html" class="nav-link">Community</a>
-        <a href="/pages/learning/getting-started.html" class="nav-link">Learn</a>
-        <a href="/pages/plans.html" class="nav-link">Plans</a>
-    </nav>
-    <div style="padding-left: 0px; flex-direction: column;" class="content">
-        <div class="community-intro">
+    <div style="padding-left: 0px; flex-direction: column; padding-top: 0px;" class="content">
+        <div style="background-image: url(/images/healthy.jpg);" class="home-intro">
+            <nav style="background-color: #ffffff00; z-index: 1; position: fixed;">
+                <img class="nav-logo" src="/images/logo.png" alt="">
+                <div class="nav-links">
+                    <a href="/index.html" class="nav-link">Home</a>
+                    <a href="/pages/learning/getting-started.html" class="nav-link">Learn</a>
+                    <a href="/pages/plans.html" class="nav-link">Plans</a>
+                    <a href="/pages/community.html" class="nav-link">Community</a>
+                </div>
+            </nav>
             <div class="intro-text">
-                <h1>Start your Journey</h1>
-                <p>Find diet plans, nutrition defintions, and join a community.</p>
-                <a href="" class="intro-btn">Join</a>
+                <h1>Find your Community</h1>
+                <p>Join our discord to share results or ask questions</p>
+                <a href="#join" class="intro-btn">Join</a>
             </div>
     </div>
+    <div style="height: 600px;" class="intro-sec">
+        <div class="section">
+        <div class="inner-sec">
+            <h1>Our Plans</h1>
+            <p>Choose from anyone of the premade diet plans created for an easier experience with reaching your goal.</p>
+        </div>
+        <div class="inner-sec">
+            <img class="sec-img" src="/images/cut.jpg" alt="">
+        </div>
+        </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(84, 143, 219)" fill-opacity="1" d="M0,288L120,277.3C240,267,480,245,720,213.3C960,181,1200,139,1320,117.3L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+        <div style="background-color: #fff;" class="intro-sec">
+            <div class="section">
+            <div style="color: #545454 !important;" class="inner-sec">
+                <img src="/images/studying.jpg" alt="" class="sec-img">
+            </div>
+            <div style="color: #545454 !important;" class="inner-sec">
+                <h1>Learning Portion</h1>
+                <p>Explore a complete, easy to learn nutrition tab with everydthing you need to know about what your eating.</p>
+            </div>
+        </div>
+        </div>
+        <div style="background-color: #333;" class="intro-sec">
+            <div class="section">
+                <div class="inner-sec">
+                    <h1>Community</h1>
+                    <p>Join our community and meet new people with simliar goals like you, and inspire others with personal progress.</p>
+                    <a style="margin-top: 20px;" id="join" href="" class="intro-btn">Join</a>
+                </div>
+                <div class="inner-sec">
+                    <img src="/images/community.jpg" alt="" class="sec-img">
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>

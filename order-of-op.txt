@@ -1,5 +1,6 @@
 create templates for everything
+add footer to home page
 gather info for learn page
-add toolbar for documents like highlighting and what not
 add diet rating to each diet on plans page and learning diets
 Lastly polish everything up with animations and make pretty with svgs and stuff
+replace every image with royalty free images or your own

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --primary: #548fdb;
+    --back-contrast: #f7f7f7;
+    --dark-text: #545454;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -31,6 +37,13 @@ body {
 }
 
 .nav-links {
+    margin-left: 10px;
+    float: right;
+    margin-right: 10px;
+}
+
+.nav-logo {
+    height: 100%;
     margin-left: 10px;
 }
 
@@ -165,6 +178,7 @@ display: block;
     margin-left: 15px;
     font-size: 30px;
     border-bottom: 1px solid #cccccc;
+    color: #545454;
 }
 
 .mc-par {
@@ -253,13 +267,59 @@ margin: 5px;
     text-shadow: 2px 2px 3px rgb(38 38 38 / 86%)
 }
 
-.community-intro {
+.home-intro {
     width: 100%;
     background-image: url('/images/healthy.jpg');
     background-position: center;
     background-size: cover;
     backdrop-filter: blur(10px);
-    
+    height: 900px;
+}
+
+.intro-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #548fdb;
+    height: 700px;
+    padding-top: 30px;
+}
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    display: flex;
+}
+
+.inner-sec {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.inner-sec > h1, .inner-sec > p {
+    margin: 5px;
+}
+
+.inner-sec > h1 {
+    font-size: 45px;
+}
+
+.inner-sec > p {
+    font-size: 20px;
+}
+
+.sec-img {
+    border-radius: 5px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    height: 60%;
 }
 
 .intro-text {
@@ -270,25 +330,30 @@ margin: 5px;
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 475px;
+    height: 900px;
     justify-content: center;
 }
 
-.intro-text > h1, .intro-text > p {
+.intro-text > h1 {
+    font-size: 75px;
     color: white;
     margin: 0px;
     text-align: center;
 }
 
 .intro-text > p {
+    font-size: 22px;
     font-weight: 300;
+    color: white;
+    margin: 0px;
+    text-align: center;
 }
 
 .intro-btn {
     text-align: center;
     background-color: #ffffff;
-    padding: 5px;
-    width: 100px;
+    padding: 7.5px;
+    width: 120px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
@@ -296,6 +361,7 @@ margin: 5px;
     border-radius: 3px;
     text-decoration: none;
     transition: all 0.3s ease;
+    font-size: 20px;
 }
 
 .intro-btn:hover {
