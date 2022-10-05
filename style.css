@@ -23,6 +23,11 @@ body {
     line-height: 70px;
     font-weight: 400;
     font-size: 17.5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e0d5d5;
 }
 
 .nav-links {
@@ -83,6 +88,7 @@ font-size: 15px;
 width: 152px;
 border: solid 1px #cccccc;
 font-family: 'Montserrat';
+transition: all 0.5s ease;
 }
 
 .sidebar-search:focus {
@@ -94,6 +100,7 @@ font-family: 'Montserrat';
 .sidebar-spacing {
     width: 80%;
     border-bottom: solid 1px #0000003d;
+    display: block;
 }
 
 .side-links {
@@ -295,62 +302,24 @@ margin: 5px;
     background-color: #cccccc;
 }
 
-.community-links {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 475px;
-    display: flex;
-    flex-direction: row;
-}
-
-.community-link {
-    border: 1px solid #cccccc;
-    height: 200px;
-    width: 200px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    margin-right: 10px;
-    margin-left: 10px;
-    transition: all 0.3s ease;
-    border-radius: 5px;
-    margin-top: 136.5px;
-    line-height: 80px;
-}
-
 .community-link:hover {
     border: 1px solid #cccccc00;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.toolbar {
-    padding: 3px;
-    border-radius: 4px;
-    box-shadow: #0000003d 0px 3px 8px;
+.mc-img-contain {
+    background-color: #f7f7f7;
+    border-radius: 5px;
     display: flex;
-    flex-direction: column;
-    margin-left: 80%;
-    margin-top: 195px;
-    height: 145px;
-    padding-bottom: 7px;
-    position: fixed;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    justify-content: center;
 }
 
-.tool {
-    color: #333;
-    text-decoration: none;
-    text-align: center;
-    border-bottom: 1px solid #cccccc;
-    font-size: 19px;
-    width: 30px;
-    border-radius: 3px;
-}
-
-.tool:hover {
-    color: #6b6b6b;
-    background-color: rgb(216, 216, 216);
+.mc-img {
+width: 70%;
 }
 
 /* Homepage CSS */

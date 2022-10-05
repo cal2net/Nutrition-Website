@@ -42,7 +42,7 @@ function myFunction() {
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
   ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('a');
+  li = ul.getElementsByTagName('div');
   headers = ul.getElementsByClassName('side-header')
   console.log(li.length)
 
