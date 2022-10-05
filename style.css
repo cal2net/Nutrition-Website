@@ -388,8 +388,29 @@ margin: 5px;
 width: 70%;
 }
 
-/* Homepage CSS */
+.footer {
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #333;
+    font-size: 20px;
+    justify-content: center;
+    padding-top: 45px;
+}
 
-.home-content {
+.footer-links {
+    display: inline-flex;
+}
 
+.footer-link {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.footer-li {
+    color: #ffff;
+    margin-right: 30px;
+}
+
+.footer-li::marker {
+    color: #ffff;
 }
