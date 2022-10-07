@@ -4,6 +4,7 @@
     --primary: #548fdb;
     --back-contrast: #f7f7f7;
     --dark-text: #545454;
+    --btn-hover: #cccccc;
 }
 
 html {
@@ -28,7 +29,7 @@ body {
     margin-right: 5px;
     line-height: 70px;
     font-weight: 400;
-    font-size: 17.5px;
+    font-size: 19px;
     transition: all 0.3s ease;
 }
 
@@ -161,7 +162,7 @@ display: block;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    border-radius: 3px;
+    border-radius: 8px;
     background-color: #ffff;
     padding-bottom: 6%;
     font-family: 'Montserrat';
@@ -259,12 +260,15 @@ margin: 5px;
     background-image: url(/images/document-intro.jpg);
     background-position: center;
     background-size: cover;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 .doc-top > h1 {
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 3px rgb(38 38 38 / 86%)
+    text-shadow: 2px 2px 3px rgb(38 38 38 / 86%);
+    font-size: 35px;
 }
 
 .home-intro {
@@ -314,7 +318,7 @@ margin: 5px;
 }
 
 .sec-img {
-    border-radius: 5px;
+    border-radius: 8px;
     width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -365,7 +369,7 @@ margin: 5px;
 }
 
 .intro-btn:hover {
-    background-color: #cccccc;
+    background-color: var(--btn-hover);
 }
 
 .community-link:hover {
@@ -404,6 +408,10 @@ width: 70%;
 .footer-link {
     color: #ffff;
     text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--btn-hover);
 }
 
 .footer-li {
