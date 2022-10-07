@@ -2,6 +2,7 @@
 
 :root {
     --primary: #548fdb;
+    --background-dark: #444c57;
     --back-contrast: #f7f7f7;
     --dark-text: #545454;
     --btn-hover: #cccccc;
@@ -287,12 +288,12 @@ margin: 5px;
     background-color: #548fdb;
     height: 700px;
     padding-top: 30px;
+    width: 100%;
 }
 
 .section {
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
     display: flex;
 }
 
@@ -303,6 +304,7 @@ margin: 5px;
     justify-content: center;
     margin-left: 25px;
     margin-right: 25px;
+    max-width: 600px;
 }
 
 .inner-sec > h1, .inner-sec > p {
