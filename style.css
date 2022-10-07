@@ -379,6 +379,18 @@ margin: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.com-btn {
+    background-color: #fff;
+    text-decoration: none;
+    color: var(--dark-text);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 8px;
+    width: 150px;
+    text-align: center;
+    border-radius: 3px;
+}
+
 .mc-img-contain {
     background-color: #f7f7f7;
     border-radius: 5px;
