@@ -1,4 +1,5 @@
 create templates for everything
+Change plans page's sliders to a grid with all diets on it
 add footer to home page
 gather info for learn page
 add diet rating to each diet on plans page and learning diets
