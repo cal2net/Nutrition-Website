@@ -234,19 +234,29 @@ margin: 5px;
     text-decoration: none;
     padding: 10px;
     margin: 10px;
-    height: 250px;
-    width: 250px;
+    height: 275px;
+    width: 275px;
     display: inline-block;
     text-align: center;
     border-radius: 10px;
     color: #333;
     background-size: cover;
     background-position: center;
+    transition: all 0.3s ease;
+}
+
+.plan-link:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.plans-links {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .plans-lbl {
     position: relative; 
-    bottom: -210px;
+    bottom: -230px;
     background-color: #238affa2;
     border-radius: 8px;
     height: 20px;
@@ -255,6 +265,12 @@ margin: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.plans-lbl:hover {
+    cursor: pointer;
 }
 
 .doc-top {
