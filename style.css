@@ -465,3 +465,58 @@ width: 70%;
 .footer-li::marker {
     color: #ffff;
 }
+
+.menu {
+    display: none;
+    border: none;
+    background-color: #ffffff00;
+    font-size: 25px;
+    line-height: 70px;
+    color: white;
+    border-radius: 5px;
+    width: 70px;
+}
+
+.menu:hover {
+    background-color: #444c5770;
+}
+
+
+@media only screen and (max-width: 773px) and (min-width: 200px) {
+
+    .section {
+        flex-direction: column !important;
+    }
+
+    .inner-sec {
+        text-align: center;
+    }
+
+    .intro-btn {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .intro-sec {
+        height: 600px !important;
+    }
+
+    #innersec1 {
+        order: 1;
+    }
+
+    #innersec2 {
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 615px) and (min-width: 200px) {
+
+    .menu {
+        display: block !important;
+    }
+
+    .nav-link {
+        display: none !important;
+    }
+}

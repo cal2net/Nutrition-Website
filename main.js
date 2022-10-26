@@ -58,3 +58,16 @@ function myFunction() {
     }
   }
 }
+
+function menu() {
+  console.log('show menu')
+  document.getElementById('men-btn').style.cssText = 'display: none !important';
+  var links = document.getElementById('nav-links')
+  links.style.cssText = 'background-color: white;';
+  var link = document.getElementsByClassName('nav-link');
+  var i;
+  for (i=0; i < link.length; i++) {
+  link[i].style.cssText = 'display: block !important; color: black;';
+  console.log('link added')
+  }
+}
