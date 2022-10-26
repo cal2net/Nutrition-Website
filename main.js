@@ -59,6 +59,7 @@ function myFunction() {
   }
 }
 
+// mobile navbar dropdown btn
 function menu() {
   console.log('show menu')
   document.getElementById('men-btn').style.cssText = 'display: none !important';
