@@ -62,6 +62,7 @@ function myFunction() {
 let icons = ['<i class="fa-solid fa-house"></i>','<i class="fa-solid fa-graduation-cap"></i>','<i class="fa-solid fa-note-sticky"></i>','<i class="fa-solid fa-user-group"></i>']
 let strings = ['Home','Learn','Plans','Community'];
 
+// mobile navbar dropdown btn
 function menu() {
   console.log('show menu');
   document.getElementById('exit-btn').style.cssText = 'display: block !important';
