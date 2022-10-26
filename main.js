@@ -59,15 +59,31 @@ function myFunction() {
   }
 }
 
+let icons = ['<i class="fa-solid fa-house"></i>','<i class="fa-solid fa-graduation-cap"></i>','<i class="fa-solid fa-note-sticky"></i>','<i class="fa-solid fa-user-group"></i>']
+let strings = ['Home','Learn','Plans','Community'];
+
 function menu() {
-  console.log('show menu')
+  console.log('show menu');
+  document.getElementById('exit-btn').style.cssText = 'display: block !important';
   document.getElementById('men-btn').style.cssText = 'display: none !important';
-  var links = document.getElementById('nav-links')
+  var links = document.getElementById('nav-links');
   links.style.cssText = 'background-color: white;';
   var link = document.getElementsByClassName('nav-link');
   var i;
   for (i=0; i < link.length; i++) {
   link[i].style.cssText = 'display: block !important; color: black;';
-  console.log('link added')
+  link[i].innerHTML = icons[i] + ' ' +strings[i];
+  console.log('link added');
   }
+}
+
+function exit() {
+  console.log('exit');
+  let links = document.getElementsByClassName('nav-link');
+  document.getElementById('nav-links').style.cssText = 'background-color: #ff;';
+  for(var i=0;i<links.length;i++) {
+    links[i].style.cssText = 'display: none !important; color: black;';
+  }
+  document.getElementById('exit-btn').style.cssText = 'display: none !important';
+  document.getElementById('men-btn').style.cssText = 'display: block !important';
 }

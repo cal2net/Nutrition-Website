@@ -477,6 +477,17 @@ width: 70%;
     width: 70px;
 }
 
+.exit {
+    display: none;
+    border: none;
+    background-color: #ffffff00;
+    font-size: 25px;
+    line-height: 70px;
+    color: black;
+    border-radius: 5px;
+    width: 70px;
+}
+
 .menu:hover {
     background-color: #444c5770;
 }
