@@ -1,5 +1,3 @@
-console.log("ready")
-
 function next_slide() {
 var slide = document.getElementsByClassName("plan-link")
 let visible = 3 // visible slides
@@ -90,4 +88,24 @@ function exit() {
 }
 
 // Hey Jack I'm gonna leave some of the diet equations right here
+<<<<<<< HEAD
 // (lbs / 2.205 * 0.8) protein equation
+=======
+// 2.2(lbs) * 0.8 (this is for how much protein they should be getting, for every 2.2 lbs they should get 0.8 grams)
+function lbsToProtein(lbs) {
+  let kgs = lbs * 2.2;
+  let proteinGrams = kgs * 0.8;
+  console.log(proteinGrams);
+  return proteinGrams;
+}
+function submit() {
+  let lbs = parseFloat(document.getElementById('lbs-input').value);
+  let height = document.getElementById('height-input');
+  let fat = document.getElementById('fat-input');
+
+  let proteinGrams = lbsToProtein(lbs);
+}
+
+
+// I'll add more later
+>>>>>>> 5c55c5a1f1bfee66731d0edbbbaf2ae5f6891c10
