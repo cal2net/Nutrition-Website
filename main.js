@@ -1,5 +1,3 @@
-console.log("ready")
-
 function next_slide() {
 var slide = document.getElementsByClassName("plan-link")
 let visible = 3 // visible slides
