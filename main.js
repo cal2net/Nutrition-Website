@@ -68,11 +68,11 @@ function menu() {
   document.getElementById('exit-btn').style.cssText = 'display: block !important';
   document.getElementById('men-btn').style.cssText = 'display: none !important';
   var links = document.getElementById('nav-links');
-  links.style.cssText = 'background-color: white;';
+  links.style.cssText = 'background-color: white; position: absolute; right: 0; top: 0; width: 325px; height: 100vh;';
   var link = document.getElementsByClassName('nav-link');
   var i;
   for (i=0; i < link.length; i++) {
-  link[i].style.cssText = 'display: block !important; color: black;';
+  link[i].style.cssText = 'display: block !important; color: #333; margin-inline: 30px; padding: 8px; margin-top: 20px; border-radius: 8px;';
   link[i].innerHTML = icons[i] + ' ' +strings[i];
   console.log('link added');
   }
@@ -83,8 +83,12 @@ function exit() {
   let links = document.getElementsByClassName('nav-link');
   document.getElementById('nav-links').style.cssText = 'background-color: #ff;';
   for(var i=0;i<links.length;i++) {
-    links[i].style.cssText = 'display: none !important; color: black;';
+    links[i].style.cssText = 'display: none !important; color: #333;';
   }
   document.getElementById('exit-btn').style.cssText = 'display: none !important';
   document.getElementById('men-btn').style.cssText = 'display: block !important';
 }
+
+// Hey Jack I'm gonna leave some of the diet equations right here
+// 2.2(lbs) * 0.8 (this is for how much protein they should be getting, for every 2.2 lbs they should get 0.8 grams)
+// I'll add more later

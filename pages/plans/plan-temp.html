@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/css/all.css">
+</head>
+<body style="background-color: #f7f7f7;">
+    <nav style="z-index: 1; position: fixed;">
+        <img class="nav-logo" src="/images/logo.png" alt="">
+        <div id="nav-links" class="nav-links">
+            <button id="exit-btn" onclick="exit()" class="exit"><i class="fa-solid fa-xmark"></i> Exit</button>
+            <a href="index.html" class="nav-link"></i>Home</a>
+            <a href="pages/learning/getting-started.html" class="nav-link"></i>Learn</a>
+            <a href="pages/plans.html" class="nav-link"></i>Plans</a>
+            <a href="pages/community.html" class="nav-link"></i>Community</a>
+            <button onclick="menu()" id="men-btn" class="menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+    <div style="padding-left: 0px;" class="content">
+        <div class="main-content">
+            <h1 style="text-align: center;" class="mc-h1">First, a few questions...</h1>
+            <p class="p-quest">How much do you weigh?</p>
+            <input type="text" class="plan-input" placeholder="0 lbs" name="" id="">
+            <p class="p-quest">How tall are you?</p>
+            <input type="text" class="plan-input" placeholder="5'2 ft" name="" id="">
+            <p class="p-quest">Estimated body fat?</p>
+            <input type="text" class="plan-input" placeholder="12%" name="" id="">
+            <button class="plan-sub">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

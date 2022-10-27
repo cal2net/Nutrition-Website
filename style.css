@@ -26,8 +26,7 @@ body {
 .nav-link {
     color: white;
     text-decoration: none;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-inline: 5px;
     line-height: 70px;
     font-weight: 400;
     font-size: 19px;
@@ -140,7 +139,7 @@ display: block;
     text-decoration: none;
     margin: 1.5px;
     display: block;
-    max-width: 145px;
+    max-width: 132.5px;
     transition: all 0.5s ease;
     padding: 7px;
     font-weight: 500;
@@ -475,23 +474,83 @@ width: 70%;
     color: white;
     border-radius: 5px;
     width: 70px;
+    margin-left: 7.5px;
 }
 
 .exit {
     display: none;
     border: none;
-    background-color: #ffffff00;
-    font-size: 25px;
+    background-color: var(--primary);
+    font-size: 22px;
     line-height: 70px;
-    color: black;
-    border-radius: 5px;
-    width: 70px;
+    color: white;
+    font-weight: 700;
+    margin: 0px;
+    text-align: left;
+    padding-left: 7.5px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+
+.exit > i {
+    float: right;
+    line-height: 70px;
+    font-size: 25px;
+    margin-right: 25px;
 }
 
 .menu:hover {
     background-color: #444c5770;
 }
 
+
+.plan-input {
+    display: block;
+    margin: 5px;
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    margin-inline: auto;
+    border-radius: 4px;
+    background-color: #fff;
+    border: solid 1px #cccccc;
+    color: #545454;
+}
+
+.plan-input:focus {
+    border: solid 1px #2389ff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    outline: none;
+}
+
+.p-quest {
+    text-align: center;
+    color: #545454;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.plan-sub {
+    background-color: #2389ff;
+    margin: 5px;
+    margin-inline: auto;
+    display: block;
+    width: 125px;
+    border: none;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'poppins';
+}
+
+.plan-sub:hover {
+    background-color: #4a9cfa;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 773px) and (min-width: 200px) {
 
@@ -529,5 +588,27 @@ width: 70%;
 
     .nav-link {
         display: none !important;
+        line-height: 0px;
+    }
+
+    .nav-links {
+        margin-right: 0px;
+    }
+
+    .nav-link:hover, .nav-link:active {
+        background-color: #1d7ce7 !important;
+        color: white !important;
+    }
+
+    .sec-img {
+        width: 360px;
+    }
+
+    .inner-sec {
+        margin: 0px;
+    }
+
+    .intro-text {
+        font-size: 70px;
     }
 }
