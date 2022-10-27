@@ -500,11 +500,6 @@ width: 70%;
     margin-right: 25px;
 }
 
-.menu:hover {
-    background-color: #444c5770;
-}
-
-
 .plan-input {
     display: block;
     margin: 5px;
