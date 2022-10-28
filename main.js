@@ -88,9 +88,9 @@ function exit() {
 }
 
 // Hey Jack I'm gonna leave some of the diet equations right here
-// 2.2(lbs) * 0.8 (this is for how much protein they should be getting, for every 2.2 lbs they should get 0.8 grams)
+// lbs / 2.205 * 0.8 (this is for how much protein they should be getting, for every 2.2 lbs they should get 0.8 grams)
 function lbsToProtein(lbs) {
-  let kgs = lbs * 2.2;
+  let kgs = lbs / 2.205;
   let proteinGrams = kgs * 0.8;
   console.log(proteinGrams);
   return proteinGrams;
