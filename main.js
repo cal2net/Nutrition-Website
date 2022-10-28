@@ -89,6 +89,7 @@ function exit() {
 
 // Hey Jack I'm gonna leave some of the diet equations right here
 // lbs / 2.205 * 0.8 (this is for how much protein they should be getting, for every 2.2 lbs they should get 0.8 grams)
+// ---------------------------------------------------------------------------------------------------------------------
 // 13.397(lbs / 2.205) + 4.799(ft * 30.48) - 5.677(age) + 88.362 "maintain weight calorie equation"
 // [13.397(lbs / 2.205) + 4.799(ft * 30.48) - 5.677(age) + 88.362] + 700 or 1000 based on how fast they wanna gain weight
 // [13.397(lbs / 2.205) + 4.799(ft * 30.48) - 5.677(age) + 88.362] - 700 or 1000 based on how fast they wanna lose weight
