@@ -27,12 +27,21 @@
     <div style="padding-left: 0px;" class="content">
         <div class="main-content">
             <h1 style="text-align: center;" class="mc-h1">First, a few questions...</h1>
+            <p class="p-quest">How old are you?</p>
+            <input type="text" placeholder="years" class="plan-input">
             <p class="p-quest">How much do you weigh?</p>
             <input type="text" class="plan-input" placeholder="0 lbs" name="" id="lbs-input">
             <p class="p-quest">How tall are you?</p>
             <input type="text" class="plan-input" placeholder="5'2 ft" name="" id="height-input">
             <p class="p-quest">Estimated body fat?</p>
             <input type="text" class="plan-input" placeholder="12%" name="" id="fat-input">
+            <p class="p-quest">What are you doing with your weight</p>
+            <label for="">Choose a weight goal:</label>
+                    <select id="select" name="">
+                      <option value="Writer/Researcher">Maintain</option>
+                      <option value="Social Media Manager">Gain weight</option>
+                      <option value="Social Media Influencer">Lose weight</option>
+                    </select>
             <button class="plan-sub" onclick="submit()">Submit</button>
         </div>
     </div>

@@ -525,6 +525,9 @@ width: 70%;
     color: #545454;
     margin: 0px;
     margin-top: 20px;
+    border-bottom: solid 1px #ccc;
+    width: 300px;
+    margin-inline: auto;
 }
 
 .plan-sub {
@@ -622,7 +625,7 @@ width: 70%;
     .mc-h1 {
         height: 100px;
     }
-    
+
     .menu {
         display: block !important;
     }
