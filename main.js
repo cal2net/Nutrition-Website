@@ -45,7 +45,7 @@ function myFunction() {
   console.log(li.length)
 
   // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
+  for (i = 1; i < li.length; i++) {
     a = li[i];
     txtValue = a.textContent || a.innerText;
     console.log(a.innerHTML, "innerhtml")
