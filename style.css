@@ -76,6 +76,33 @@ width: 100%;
     direction: ltr;
 }
 
+.mb-sidebar {
+    display: none;
+    position: fixed;
+    width: 22px;
+    height: 40px;
+    border-radius: 0px 4px 4px 0px;
+    border: solid 1px #ccc;
+    background-color: #f7f7f7;
+    color: var(--dark-text);
+    margin-top: 80px;
+}
+
+.search-exit {
+    display: flex;
+    flex-direction: row;
+}
+
+.sb-exit {
+    display: none;
+    background: #ffffff00;
+    border: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 19px;
+    color: var(--dark-text);
+}
+
 .sidebar::-webkit-scrollbar-thumb:hover {
     background-color: #797979;
 }
@@ -183,7 +210,7 @@ display: block;
 }
 
 .mc-par {
-    width: 780px;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
@@ -191,10 +218,9 @@ display: block;
 }
 
 .mc-pf {
-    width: 780px;
+    width: 95%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     margin-bottom: 10px;
     line-height: 40px;
 }
@@ -480,7 +506,7 @@ width: 70%;
 .exit {
     display: none;
     border: none;
-    background-color: var(--primary);
+    background-color: #2479e8;
     font-size: 22px;
     line-height: 70px;
     color: white;
@@ -593,11 +619,6 @@ width: 70%;
         order: 2;
     }
 
-
-    .mc-pf {
-        width: 100%;
-    }
-
     .main-content {
         width: 100%;
     }
@@ -622,6 +643,30 @@ width: 70%;
 
 @media only screen and (max-width: 615px) and (min-width: 200px) {
 
+    .sidebar-search {
+        width: 65%;
+    }
+
+    .sb-exit {
+        display: block !important;
+    }
+
+    .sidebar {
+        display: none !important;
+    }
+
+    .mb-sidebar {
+        display: block !important;
+    }
+
+    .content {
+        padding-left: 0px;
+    }
+
+    .main-content {
+        width: 90% !important;
+    }
+
     .mc-h1 {
         height: 100px;
     }
@@ -633,6 +678,7 @@ width: 70%;
     .nav-link {
         display: none !important;
         line-height: 0px;
+        font-size: 21px;
     }
 
     .nav-links {

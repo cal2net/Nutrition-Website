@@ -13,16 +13,22 @@
 <body style="background-color: #f7f7f7;">
     <nav>
         <img class="nav-logo" src="/images/logo.png" alt="">
-        <div class="nav-links">
-        <a href="" class="nav-link">Home</a>
-        <a href="" class="nav-link">Learn</a>
-        <a href="" class="nav-link">Plans</a>
-        <a href="" class="nav-link">Community</a>
+        <div id="nav-links" class="nav-links">
+            <button id="exit-btn" onclick="exit()" class="exit">NUTRIZONE <i class="fa-solid fa-xmark"></i></button>
+            <a href="" class="nav-link">Home</a>
+            <a href="" class="nav-link">Learn</a>
+            <a href="" class="nav-link">Plans</a>
+            <a href="" class="nav-link">Community</a>
+            <button onclick="menu()" id="men-btn" class="menu"><i class="fa-solid fa-bars"></i></button>
         </div>
     </nav>
-    <div class="sidebar">
+    <button onclick="sb_open()" class="mb-sidebar"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+    <div id="sidebar" class="sidebar">
         <div id="myUL" class="side-links">
-            <input onkeyup="myFunction()" class="sidebar-search" id="myInput" type="textbox" value="" placeholder="Search">
+            <div class="search-exit">
+                <input onkeyup="myFunction()" class="sidebar-search" id="myInput" type="textbox" value="" placeholder="Search">
+                <button onclick="sb_close()" class="sb-exit"><i class="fa-solid fa-right-from-bracket"></i></button>
+            </div>
             <a style="margin-top: 20px; display: block;" href="" class="side-link">Getting Started</a>
             <a style="display: block;" href="/pages/Learning/basic-tips.html" class="side-link">Basic Tips</a>
             <span class="sidebar-spacing"></span>
