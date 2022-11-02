@@ -67,7 +67,7 @@ function menu() {
   document.getElementById('exit-btn').style.cssText = 'display: block !important';
   document.getElementById('men-btn').style.cssText = 'display: none !important';
   var links = document.getElementById('nav-links');
-  links.style.cssText = 'background-color: #222; position: absolute; right: 0; top: 0; width: 325px; height: 100vh;';
+  links.style.cssText = 'background-color: #222; position: absolute; right: 0; top: 0; width: 85%; height: 100vh;';
   var link = document.getElementsByClassName('nav-link');
   var i;
   for (i=0; i < link.length; i++) {
