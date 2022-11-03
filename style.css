@@ -319,7 +319,6 @@ margin: 5px;
     background-image: url('/images/healthy.jpg');
     background-position: center;
     background-size: cover;
-    backdrop-filter: blur(10px);
     height: 900px;
 }
 
@@ -646,7 +645,7 @@ width: 70%;
 @media only screen and (max-width: 615px) and (min-width: 200px) {
 
     .sidebar-search {
-        width: 65%;
+        width: 70%;
     }
 
     .sb-exit {
@@ -693,7 +692,7 @@ width: 70%;
     }
 
     .sec-img {
-        width: 360px;
+        width: 95%;
     }
 
     .inner-sec {
@@ -702,16 +701,29 @@ width: 70%;
 
     .intro-text {
         font-size: 70px;
+        backdrop-filter: url(filters.svg#filter) blur(3px) brightness(50%);
+    -webkit-backdrop-filter: url(filters.svg#filter) blur(3px) brightness(50%);
+    backdrop-filter: blur(3px) brightness(50%);
     }
 
     .plans-links {
         grid-template-columns: auto;
     }
 
-    
-
     .main-content {
         width: 100%;
+    }
+
+    .footer-li {
+        margin-right: 0px !important;
+    }
+
+    .footer-link {
+        margin-right: 25px !important;
+    }
+
+    .footer {
+        font-size: 18px !important;
     }
 }
 
@@ -725,4 +737,13 @@ width: 70%;
     .doc-top > h1 {
         font-size: 30px !important;
     }
+    
+    .footer {
+        font-size: 16px !important;
+    }
+
+    .intro-text > h1 {
+        font-size: 60px !important;
+    }
+
 }

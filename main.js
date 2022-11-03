@@ -63,7 +63,6 @@ let strings = ['Home','Learn','Plans','Community'];
 // mobile navbar dropdown btn
 function menu() {
   console.log('show menu');
-  sb_close()
   document.getElementById('exit-btn').style.cssText = 'display: block !important';
   document.getElementById('men-btn').style.cssText = 'display: none !important';
   var links = document.getElementById('nav-links');
@@ -75,6 +74,7 @@ function menu() {
   link[i].innerHTML = icons[i] + ' ' +strings[i];
   console.log('link added');
   }
+  sb_close()
 }
 
 function exit() {
