@@ -699,11 +699,13 @@ width: 70%;
         margin: 0px;
     }
 
+    .home-intro {
+        background-image: url(images/healthyios.jpg) !important;
+    }
+
     .intro-text {
         font-size: 70px;
-        backdrop-filter: url(filters.svg#filter) blur(3px) brightness(50%);
-    -webkit-backdrop-filter: url(filters.svg#filter) blur(3px) brightness(50%);
-    backdrop-filter: blur(3px) brightness(50%);
+        backdrop-filter: none !important;
     }
 
     .plans-links {
