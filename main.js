@@ -113,13 +113,33 @@ function lbsToProtein(lbs) {
   console.log(proteinGrams);
   return proteinGrams;
 }
+
+function ftTocm(height) {
+  console.log(height)
+  let ft = height.split("'");
+  //console.log(ft[0], ft[1]);
+  let cm = ((parseInt(ft[0]) * 12) + parseInt(ft[1])) * 2.54;
+  console.log("cm", cm)
+}
+
 function submit() {
   let lbs = parseFloat(document.getElementById('lbs-input').value);
-  let height = document.getElementById('height-input');
-  let fat = document.getElementById('fat-input');
+  let age = document.getElementById('age-input').value;
+  let height = document.getElementById('height-input').value;
+  let fat = document.getElementById('fat-input').value;
+  let goal_input = document.getElementById('select');
+  let weightGoal = goal_input.value;
+  console.log("weight", lbs)
+  console.log("age", age)
+  console.log("height", height)
+  console.log("fat", fat)
+  console.log("Goal:", weightGoal)
 
   let proteinGrams = lbsToProtein(lbs);
+  ftTocm(height);
 }
+
+
 
 
 // I'll add more later
