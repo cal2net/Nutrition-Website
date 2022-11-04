@@ -300,7 +300,7 @@ margin: 5px;
 }
 
 .doc-top {
-    background-image: url(/images/document-intro.jpg);
+    background-image: url(images/document-intro.jpg);
     background-position: center;
     background-size: cover;
     padding: 8px;
