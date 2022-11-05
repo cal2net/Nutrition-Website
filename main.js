@@ -136,10 +136,7 @@ function submit() {
   console.log("Goal:", weightGoal)
 
   let proteinGrams = lbsToProtein(lbs);
-  ftTocm(height);
+  let cm = ftTocm(height);
 }
-
-
-
 
 // I'll add more later
