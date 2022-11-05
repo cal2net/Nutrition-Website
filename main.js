@@ -158,8 +158,3 @@ function submit() {
 
   let proteinGrams = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), age);
 }
-
-
-
-
-// I'll add more later
