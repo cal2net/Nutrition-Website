@@ -107,10 +107,30 @@ function sb_close() {
 // [13.397(lbs / 2.205) + 4.799(ft * 30.48) - 5.677(age) + 88.362] + 700 or 1000 based on how fast they wanna gain weight
 // [13.397(lbs / 2.205) + 4.799(ft * 30.48) - 5.677(age) + 88.362] - 700 or 1000 based on how fast they wanna lose weight
 // for the equation above it tells you how many calories to maintain weight,
-function lbsToProtein(lbs) {
+function lbsToProtein(lbs, weightGoal, cm, age) {
   let kgs = lbs / 2.205;
-  let proteinGrams = kgs * 2.55; //changed this to 2.55 for now until you add maintaining too
-  console.log(proteinGrams);
+  let calorieIntake;
+  let proteinGrams;
+  switch (weightGoal) {
+    case 1: //maintain
+      calorieIntake = (kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362;
+      proteinGrams = kgs * 0.8;
+      break;
+    case 2: //gain
+      calorieIntake = [(kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362] + 700;
+      proteinGrams = kgs * 2.55;
+      break;
+    case 3: //lose
+    calorieIntake = ([(kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362] - 700);
+      proteinGrams = kgs * 0.8;
+      break;
+  }
+  calorieIntake = Math.round(calorieIntake);
+  proteinGrams = Math.round(proteinGrams);
+    
+ //changed this to 2.55 for now until you add maintaining too
+  console.log("Protein: "+proteinGrams+"g");
+  console.log('Calorie Intake: '+calorieIntake+'cal');
   return proteinGrams;
 }
 
@@ -119,7 +139,8 @@ function ftTocm(height) {
   let ft = height.split("'");
   //console.log(ft[0], ft[1]);
   let cm = ((parseInt(ft[0]) * 12) + parseInt(ft[1])) * 2.54;
-  console.log("cm", cm)
+  console.log("cm", cm);
+  return cm;
 }
 
 function submit() {
@@ -129,14 +150,13 @@ function submit() {
   let fat = document.getElementById('fat-input').value;
   let goal_input = document.getElementById('select');
   let weightGoal = goal_input.value;
-  console.log("weight", lbs)
-  console.log("age", age)
-  console.log("height", height)
-  console.log("fat", fat)
-  console.log("Goal:", weightGoal)
+  console.log("weight", lbs);
+  console.log("age", age);
+  console.log("height", height);
+  console.log("fat", fat);
+  console.log("Goal:", weightGoal);
 
-  let proteinGrams = lbsToProtein(lbs);
-  ftTocm(height);
+  let proteinGrams = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), age);
 }
 
 
