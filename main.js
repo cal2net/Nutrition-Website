@@ -107,21 +107,21 @@ function sb_close() {
 // [13.397(lbs / 2.205) + 4.799(ft * 30.48) - 5.677(age) + 88.362] + 700 or 1000 based on how fast they wanna gain weight
 // [13.397(lbs / 2.205) + 4.799(ft * 30.48) - 5.677(age) + 88.362] - 700 or 1000 based on how fast they wanna lose weight
 // for the equation above it tells you how many calories to maintain weight,
-function lbsToProtein(lbs, weightGoal, cm, age) {
+function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
   let kgs = lbs / 2.205;
   let calorieIntake;
   let proteinGrams;
   switch (weightGoal) {
     case 1: //maintain
-      calorieIntake = (kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362;
+      calorieIntake = (kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362 + excercise;
       proteinGrams = kgs * 0.8;
       break;
     case 2: //gain
-      calorieIntake = [(kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362] + 700;
+      calorieIntake = ((kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362) + 700 + excercise;
       proteinGrams = kgs * 2.55;
       break;
     case 3: //lose
-    calorieIntake = ([(kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362] - 700);
+    calorieIntake = ([(kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362] - 700) + excercise;
       proteinGrams = kgs * 0.8;
       break;
   }
@@ -149,12 +149,15 @@ function submit() {
   let height = document.getElementById('height-input').value;
   let fat = document.getElementById('fat-input').value;
   let goal_input = document.getElementById('select');
+  let excercise_input = document.getElementById('excercise');
+  let excercise = excercise_input.value;
   let weightGoal = goal_input.value;
   console.log("weight", lbs);
   console.log("age", age);
   console.log("height", height);
   console.log("fat", fat);
   console.log("Goal:", weightGoal);
+  console.log("excercise", excercise)
 
-  let proteinGrams = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), age);
+  let proteinGrams = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), age, parseInt(excercise));
 }
