@@ -26,43 +26,51 @@
     </nav>
     <div style="padding-left: 0px;" class="content">
         <div class="main-content">
-            <h1 style="text-align: center;" class="mc-h1">First, a few questions...</h1>
-            <p class="p-quest">What are you doing with your weight?</p>
-            <div style="width: 306px; margin-inline: auto; margin-top: 20px; margin-bottom: 20px;" class="custom-select">
-                <select id="select" name="">
-                <option value="null">Choose weight goal</option>
-                  <option value="1">Maintain</option>
-                  <option value="2">Gain weight</option>
-                  <option value="3">Lose weight</option>
-                </select>
+                <div id="form" class="form">
+                <h1 style="text-align: center;" class="mc-h1">First, a few questions...</h1>
+                <p class="p-quest">What are you doing with your weight?</p>
+                <div style="width: 306px; margin-inline: auto; margin-top: 20px; margin-bottom: 20px;" class="custom-select">
+                    <select id="select" name="">
+                    <option value="null">Choose weight goal</option>
+                    <option value="1">Maintain</option>
+                    <option value="2">Gain weight</option>
+                    <option value="3">Lose weight</option>
+                    </select>
+                </div>
+                <p class="p-quest">How much excercise do you get?</p>
+                <div style="width: 306px; margin-inline: auto; margin-top: 20px; margin-bottom: 20px;" class="custom-select">
+                    <select id="excercise" name="">
+                    <option value="null">Choose excercise</option>
+                    <option value="0">none</option>
+                    <option value="343">little to none</option>
+                    <option value="643">light: 1-3 weekly</option>
+                    <option value="798">moderate: 3-5 weekly</option>
+                    <option value="944">active: intense 3-4 weekly</option>
+                    <option value="1244">very active: intense 6-7 weekly</option>
+                    <option value="1545">extra active: very intense 5-7 weekly</option>
+                    </select>
+                </div>
+                <ul style="margin-inline: auto; width: 400px;">
+                    <li>Exercise: 15-30 minutes of elevated heart rate activity.</li>
+                    <li>Intense excercise: 45-120 minutes of elevated heart rate activity.</li>
+                    <li>Very intense exercise: 2+ hours of elevated heart rate activity.</li>
+                </ul>
+                <p class="p-quest">How old are you?</p>
+                <input type="text" id="age-input" placeholder="years" class="plan-input">
+                <p class="p-quest">How much do you weigh?</p>
+                <input type="text" class="plan-input" placeholder="0 lbs" name="" id="lbs-input">
+                <p class="p-quest">How tall are you?</p>
+                <input type="text" class="plan-input" placeholder="5'2 ft" name="" id="height-input">
+                <p class="p-quest">Estimated body fat?</p>
+                <input type="text" class="plan-input" placeholder="12%" name="" id="fat-input">
+                <button class="plan-sub" onclick="submit()">Submit</button>
             </div>
-            <p class="p-quest">How much excercise do you get?</p>
-            <div style="width: 306px; margin-inline: auto; margin-top: 20px; margin-bottom: 20px;" class="custom-select">
-                <select id="excercise" name="">
-                  <option value="null">Choose excercise</option>
-                  <option value="0">none</option>
-                  <option value="343">little to none</option>
-                  <option value="643">light: 1-3 weekly</option>
-                  <option value="798">moderate: 3-5 weekly</option>
-                  <option value="944">active: intense 3-4 weekly</option>
-                  <option value="1244">very active: intense 6-7 weekly</option>
-                  <option value="1545">extra active: very intense 5-7 weekly</option>
-                </select>
+            <div id="results" class="results">
+                <p class="p-quest">Your Calorie intake</p>
+                <p id="calories"></p>
+                <p class="p-quest">Your protein intake</p>
+                <p id="protein"></p>
             </div>
-            <ul style="margin-inline: auto;">
-                <li>Exercise: 15-30 minutes of elevated heart rate activity.</li>
-                <li>Intense excercise: 45-120 minutes of elevated heart rate activity.</li>
-                <li>Very intense exercise: 2+ hours of elevated heart rate activity.</li>
-            </ul>
-            <p class="p-quest">How old are you?</p>
-            <input type="text" id="age-input" placeholder="years" class="plan-input">
-            <p class="p-quest">How much do you weigh?</p>
-            <input type="text" class="plan-input" placeholder="0 lbs" name="" id="lbs-input">
-            <p class="p-quest">How tall are you?</p>
-            <input type="text" class="plan-input" placeholder="5'2 ft" name="" id="height-input">
-            <p class="p-quest">Estimated body fat?</p>
-            <input type="text" class="plan-input" placeholder="12%" name="" id="fat-input">
-            <button class="plan-sub" onclick="submit()">Submit</button>
         </div>
     </div>
     <script src="../../style.js"></script>
