@@ -741,10 +741,12 @@ width: 70%;
     .content {
         padding-left: 0px;
         padding-top: 70px !important;
+        padding-top: 0px !important;
     }
 
     .main-content {
         width: 90% !important;
+        margin-top: 80px !important;
     }
 
     .mc-h1 {

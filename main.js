@@ -118,7 +118,7 @@ function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
       break;
     case 2: //gain
       calorieIntake = ((kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362) + 700 + excercise;
-      proteinGrams = kgs * 2.55;
+      proteinGrams = kgs * 1.35;
       break;
     case 3: //lose
     calorieIntake = ([(kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362] - 700) + excercise;
