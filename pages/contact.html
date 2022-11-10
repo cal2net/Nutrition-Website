@@ -5,19 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrizone - Contact</title>
-    <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/css/all.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body style="background-color: var(--back-contrast)">
     <nav>
-        <img class="nav-logo" src="/images/logo.png" alt="">
-        <div class="nav-links">
-        <a href="/index.html" class="nav-link">Home</a>
-        <a href="/pages/community.html" class="nav-link">Community</a>
-        <a href="/pages/learn-template.html" class="nav-link">Learn</a>
-        <a href="/pages/plans.html" class="nav-link">Plans</a>
+        <img class="nav-logo" src="../images/logo.png" alt="">
+        <div id="nav-links" class="nav-links">
+            <button id="exit-btn" onclick="exit()" class="exit"><i class="fa-solid fa-xmark"></i> Exit</button>
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../pages/community.html" class="nav-link">Community</a>
+            <a href="../pages/learning/getting-started.html" class="nav-link">Learn</a>
+            <a href="../pages/plans.html" class="nav-link">Plans</a>
+            <button onclick="menu()" id="men-btn" class="menu"><i class="fa-solid fa-bars"></i></button>
         </div>
     </nav>
-    
+    <div style="padding-left: 0px;" class="content">
+        <div class="contact">
+            <div class="contact-info">
+                <h1>Contact Information</h1>
+                <p>Fill out our form and We'll get back to you</p>
+                <p><i class="fa-solid fa-phone"></i> (719) 315-0737</p>
+                <p><i class="fa-solid fa-envelope"></i> nutrizone@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Chicago, Illinois</p>
+            </div>
+            <div>
+                <div class="inputs">
+                    <div class="input">
+                        <label class="contact-lbl">First Name</label>
+                        <input placeholder="John" class="c-input" type="text">
+                    </div>
+                    <div class="input">
+                        <label class="contact-lbl">Last Name</label>
+                        <input placeholder="Doe" class="c-input" type="text">
+                    </div>
+                    <div class="input">
+                        <label class="contact-lbl">Email</label>
+                        <input placeholder="someguy@gmail.com" class="c-input" type="text">
+                    </div>
+                    <div class="input">
+                        <label class="contact-lbl">Phone</label>
+                        <input placeholder="630 130 8621" class="c-input" type="text">
+                    </div>
+                </div>
+                <p style="margin-left: 5px;">Message</p>
+                <textarea class="contact-msg" name="paragraph_text" cols="50" rows="10"></textarea>
+                <button class="contact-btn">Submit</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

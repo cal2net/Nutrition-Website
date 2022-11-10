@@ -80,3 +80,19 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect); 
+
+// animations
+// slide in
+anime({
+  targets: '#slide',
+  opacity: 1,
+  duration: 250,
+  delay: function(el, i, l) {
+      return i * 100;
+  },
+  duration: 500,
+  easing: 'linear',
+  right: 0,
+  opacity: 1,
+  //loop: true
+});
