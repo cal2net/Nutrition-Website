@@ -108,9 +108,9 @@ function sb_close() {
 // [13.397(lbs / 2.205) + 4.799(ft * 30.48) - 5.677(age) + 88.362] - 700 or 1000 based on how fast they wanna lose weight
 // for the equation above it tells you how many calories to maintain weight,
 function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
-  let kgs = lbs / 2.205;
-  let calorieIntake;
-  let proteinGrams;
+  var kgs = lbs / 2.205;
+  var calorieIntake;
+  var proteinGrams;
   switch (weightGoal) {
     case 1: //maintain
       calorieIntake = (kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362 + excercise;
@@ -137,22 +137,22 @@ function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
 
 function ftTocm(height) {
   console.log(height)
-  let ft = height.split("'");
+  var ft = height.split("'");
   //console.log(ft[0], ft[1]);
-  let cm = ((parseInt(ft[0]) * 12) + parseInt(ft[1])) * 2.54;
+  var cm = ((parseInt(ft[0]) * 12) + parseInt(ft[1])) * 2.54;
   console.log("cm", cm);
   return cm;
 }
 
 function submit() {
-  let lbs = parseFloat(document.getElementById('lbs-input').value);
-  let age = document.getElementById('age-input').value;
-  let height = document.getElementById('height-input').value;
-  let fat = document.getElementById('fat-input').value;
-  let goal_input = document.getElementById('select');
-  let excercise_input = document.getElementById('excercise');
-  let excercise = excercise_input.value;
-  let weightGoal = goal_input.value;
+  var lbs = parseFloat(document.getElementById('lbs-input').value);
+  var age = document.getElementById('age-input').value;
+  var height = document.getElementById('height-input').value;
+  var fat = document.getElementById('fat-input').value;
+  var goal_input = document.getElementById('select');
+  var excercise_input = document.getElementById('excercise');
+  var excercise = excercise_input.value;
+  var weightGoal = goal_input.value;
   console.log("weight", lbs);
   console.log("age", age);
   console.log("height", height);
@@ -160,7 +160,7 @@ function submit() {
   console.log("Goal:", weightGoal);
   console.log("excercise", excercise)
 
-  let info = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), age, parseInt(excercise));
+  var info = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), age, parseInt(excercise));
   document.getElementById('protein').innerHTML = info[0]
   document.getElementById('calories').innerHTML = info[1]
   document.getElementById('form').style.cssText = 'display: none;';
