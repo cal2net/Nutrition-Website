@@ -360,8 +360,7 @@ margin: 5px;
 .sec-img {
     border-radius: 8px;
     width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     object-fit: cover;
     height: 60%;
 }
@@ -744,6 +743,20 @@ width: 70%;
 
 @media only screen and (max-width: 773px) and (min-width: 200px) {
 
+
+    .btns {
+        margin-inline: auto !important;
+        height: unset !important;
+        width: 100% !important;
+    }
+
+    .com-btn {
+        margin-inline: auto;
+        background-color: var(--primary);
+        color: white !important;
+        width: 70%;
+    }
+
     .section {
         flex-direction: column !important;
     }
@@ -755,10 +768,11 @@ width: 70%;
     .intro-btn {
         margin-left: auto !important;
         margin-right: auto !important;
+        margin-bottom: 20px !important;
     }
 
     .intro-sec {
-        height: 600px !important;
+        height: unset !important;
     }
 
     #innersec1 {
@@ -793,11 +807,7 @@ width: 70%;
 
 @media only screen and (max-width: 615px) and (min-width: 200px) {
 
-    .com-btn {
-        margin-inline: auto;
-        background-color: var(--primary);
-        color: white !important;
-    }
+    
 
     .sidebar-search {
         width: 70%;
