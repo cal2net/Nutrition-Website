@@ -125,12 +125,14 @@ function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
       proteinGrams = kgs * 0.8;
       break;
   }
+  console.log('before round', parseInt(calorieIntake.typeof))
   calorieIntake = Math.round(calorieIntake);
   proteinGrams = Math.round(proteinGrams);
+  console.log('after round', parseInt(calorieIntake.typeof))
     
  //changed this to 2.55 for now until you add maintaining too
   console.log("Protein: "+proteinGrams+"g");
-  console.log('Calorie Intake: '+calorieIntake+'cal');
+  console.log('Calorie Intake: '+calorieIntake+'cal', parseInt(calorieIntake.typeof));
   return [proteinGrams, calorieIntake];
   
 }
