@@ -121,18 +121,16 @@ function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
       proteinGrams = kgs * 1.35;
       break;
     case 3: //lose
-    calorieIntake = ([(kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362] - 700) + excercise;
+    calorieIntake = (((kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362) - 700) + excercise;
       proteinGrams = kgs * 0.8;
       break;
   }
-  console.log('before round', parseInt(calorieIntake.typeof))
   calorieIntake = Math.round(calorieIntake);
   proteinGrams = Math.round(proteinGrams);
-  console.log('after round', parseInt(calorieIntake.typeof))
     
  //changed this to 2.55 for now until you add maintaining too
   console.log("Protein: "+proteinGrams+"g");
-  console.log('Calorie Intake: '+calorieIntake+'cal', parseInt(calorieIntake.typeof));
+  console.log('Calorie Intake: '+calorieIntake+'cal', (typeof calorieIntake));
   return [proteinGrams, calorieIntake];
   
 }
@@ -162,7 +160,7 @@ function submit() {
   console.log("Goal:", weightGoal);
   console.log("excercise", excercise)
 
-  var info = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), age, parseInt(excercise));
+  var info = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), parseInt(age), parseInt(excercise));
   document.getElementById('protein').innerHTML = info[0]
   document.getElementById('calories').innerHTML = info[1]
   document.getElementById('form').style.cssText = 'display: none;';
