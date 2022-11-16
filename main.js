@@ -131,7 +131,9 @@ function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
  //changed this to 2.55 for now until you add maintaining too
   console.log("Protein: "+proteinGrams+"g");
   console.log('Calorie Intake: '+calorieIntake+'cal', (typeof calorieIntake));
-  return [proteinGrams, calorieIntake];
+  var info = [proteinGrams, calorieIntake];
+  console.log(info)
+  return info;
   
 }
 
@@ -161,8 +163,8 @@ function submit() {
   console.log("excercise", excercise)
 
   var info = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), parseInt(age), parseInt(excercise));
-  document.getElementById('protein').innerHTML = +info[0]+ ' grams';
   document.getElementById('calories').innerHTML = +info[1]+ ' calories';
+  document.getElementById('protein').innerHTML = +info[0]+ ' grams';
   document.getElementById('form').style.cssText = 'display: none;';
   document.getElementById('results').style.cssText = 'display: block !important;';
 }
