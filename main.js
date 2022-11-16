@@ -161,8 +161,8 @@ function submit() {
   console.log("excercise", excercise)
 
   var info = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), parseInt(age), parseInt(excercise));
-  document.getElementById('protein').innerHTML = info[0]
-  document.getElementById('calories').innerHTML = info[1]
+  document.getElementById('protein').innerHTML = +info[0];
+  document.getElementById('calories').innerHTML = +info[1];
   document.getElementById('form').style.cssText = 'display: none;';
   document.getElementById('results').style.cssText = 'display: block !important;';
 }
