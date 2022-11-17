@@ -151,7 +151,7 @@ function ftTocm(height) {
 }
 
 function submit() {
-  const lbs = parseFloat(document.getElementById('lbs-input').value);
+  const lbs = document.getElementById('lbs-input').value;
   const age = document.getElementById('age-input').value;
   const height = document.getElementById('height-input').value;
   const fat = document.getElementById('fat-input').value;
