@@ -151,14 +151,14 @@ function ftTocm(height) {
 }
 
 function submit() {
-  var lbs = parseFloat(document.getElementById('lbs-input').value);
-  var age = document.getElementById('age-input').value;
-  var height = document.getElementById('height-input').value;
-  var fat = document.getElementById('fat-input').value;
-  var goal_input = document.getElementById('select');
-  var excercise_input = document.getElementById('excercise');
-  var excercise = excercise_input.value;
-  var weightGoal = goal_input.value;
+  const lbs = parseFloat(document.getElementById('lbs-input').value);
+  const age = document.getElementById('age-input').value;
+  const height = document.getElementById('height-input').value;
+  const fat = document.getElementById('fat-input').value;
+  const goal_input = document.getElementById('select');
+  const excercise_input = document.getElementById('excercise');
+  const excercise = excercise_input.value;
+  const weightGoal = goal_input.value;
   console.log("weight", lbs);
   console.log("age", age);
   console.log("height", height);
@@ -166,7 +166,7 @@ function submit() {
   console.log("Goal:", weightGoal);
   console.log("excercise", excercise)
 
-  var info = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), parseInt(age), parseInt(excercise));
+  let info = lbsToProtein(parseFloat(lbs), parseInt(weightGoal), ftTocm(height.toString()), parseInt(age), parseInt(excercise));
   document.getElementById('calories').innerHTML = info[1] + ' calories';
   document.getElementById('protein').innerHTML = info[0] + ' grams';
   document.getElementById('form').style.cssText = 'display: none;';
