@@ -111,20 +111,24 @@ function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
   var kgs = lbs / 2.205;
   var calorieIntake;
   var proteinGrams;
-  switch (weightGoal) {
-    case 1: //maintain
+  //switch (weightGoal) {
+    if (weightGoal == 1) {
+    //case 1: //maintain
       calorieIntake = (kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362 + excercise;
       proteinGrams = kgs * 0.8;
-      break;
-    case 2: //gain
+      //break;
+    } else if (weightgoal == 2) {
+    //case 2: //gain
       calorieIntake = ((kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362) + 700 + excercise;
       proteinGrams = kgs * 1.35;
-      break;
-    case 3: //lose
+      }
+      //break;
+    //case 3: //lose
+    else {
     calorieIntake = (((kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362) - 700) + excercise;
       proteinGrams = kgs * 0.8;
-      break;
-  }
+      //break;
+    }
   var calorieIntake = Math.round(calorieIntake);
   var proteinGrams = Math.round(proteinGrams);
     
@@ -142,7 +146,7 @@ function ftTocm(height) {
   var ft = height.split("'");
   //console.log(ft[0], ft[1]);
   var cm = ((parseInt(ft[0]) * 12) + parseInt(ft[1])) * 2.54;
-  console.log("cm", cm);
+  console.log("cm", cm, (typeof cm));
   return cm;
 }
 
