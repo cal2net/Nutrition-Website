@@ -108,27 +108,31 @@ function sb_close() {
 // [13.397(lbs / 2.205) + 4.799(ft * 30.48) - 5.677(age) + 88.362] - 700 or 1000 based on how fast they wanna lose weight
 // for the equation above it tells you how many calories to maintain weight,
 function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
+  console.log("weight", lbs, (typeof lbs));
+  console.log("age", age, (typeof age));
+  console.log("height in cm", cm, (typeof cm));
+  console.log("Goal:", weightGoal, (typeof weightGoal));
+  console.log("excercise", excercise, (typeof excercise))
   var kgs = lbs / 2.205;
   var calorieIntake;
   var proteinGrams;
-  //switch (weightGoal) {
-    if (weightGoal == 1) {
-    //case 1: //maintain
+  switch (weightGoal) {
+    case 1: //maintain
       calorieIntake = (kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362 + excercise;
       proteinGrams = kgs * 0.8;
-      //break;
-    } else if (weightgoal == 2) {
-    //case 2: //gain
+      break;
+
+    case 2: //gain
       calorieIntake = ((kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362) + 700 + excercise;
       proteinGrams = kgs * 1.35;
-      }
-      //break;
-    //case 3: //lose
-    else {
+      break;
+
+    case 3: //lose
     calorieIntake = (((kgs * 13.397) + (cm * 4.799) - (age * 5.677) + 88.362) - 700) + excercise;
       proteinGrams = kgs * 0.8;
-      //break;
-    }
+      break;
+  }
+    
   var calorieIntake = Math.round(calorieIntake);
   var proteinGrams = Math.round(proteinGrams);
     
@@ -142,10 +146,10 @@ function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
 }
 
 function ftTocm(height) {
-  console.log(height)
-  var ft = height.split("'");
+  console.log(typeof height)
+  const ft = height.split("'");
   //console.log(ft[0], ft[1]);
-  var cm = ((parseInt(ft[0]) * 12) + parseInt(ft[1])) * 2.54;
+  const cm = ((parseInt(ft[0]) * 12) + parseInt(ft[1])) * 2.54;
   console.log("cm", cm, (typeof cm));
   return cm;
 }
@@ -159,16 +163,14 @@ function submit() {
   const excercise_input = document.getElementById('excercise');
   const excercise = excercise_input.value;
   const weightGoal = goal_input.value;
-  console.log("weight", lbs);
-  console.log("age", age);
-  console.log("height", height);
-  console.log("fat", fat);
-  console.log("Goal:", weightGoal);
-  console.log("excercise", excercise)
+  
 
-  let info = lbsToProtein(parseFloat(lbs), parseInt(weightGoal), ftTocm(height.toString()), parseInt(age), parseInt(excercise));
+  let info = lbsToProtein(parseFloat(lbs), parseInt(weightGoal), ftTocm(height), parseInt(age), parseInt(excercise));
   document.getElementById('calories').innerHTML = info[1] + ' calories';
   document.getElementById('protein').innerHTML = info[0] + ' grams';
   document.getElementById('form').style.cssText = 'display: none;';
   document.getElementById('results').style.cssText = 'display: block !important;';
 }
+
+// new let info = lbsToProtein(parseFloat(lbs), parseInt(weightGoal), ftTocm(height.toString()), parseInt(age), parseInt(excercise));
+// old var info = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), parseInt(age), parseInt(excercise));
