@@ -144,10 +144,17 @@ function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
   return info;
   
 }
-
+// Fixed bug with iOS devices that have "Smart Punctuation" turned on with was causing split to not work.
 function ftTocm(height) {
   console.log(typeof height)
-  const ft = height.split("'");
+  const fapp = String.fromCharCode(8217);
+  let ft = null;
+  if(height.indexOf(fapp)>0){
+    ft = height.split(fapp);
+  }
+  else{
+    ft = height.split('\'');
+  }
   //console.log(ft[0], ft[1]);
   const cm = ((parseInt(ft[0]) * 12) + parseInt(ft[1])) * 2.54;
   console.log("cm", cm, (typeof cm));
