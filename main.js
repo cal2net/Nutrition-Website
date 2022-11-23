@@ -48,24 +48,6 @@ function myFunction() {
     txtValue = a.textContent || a.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
-      console.log(filter);
-      var sideLinks = li[i].getElementsByClassName('side-link');
-      for(i=0;i<sideLinks.length;i++) {
-        var test = '';
-        test = sideLinks[i].innerHTML.replace('<mark>','');
-        test = test.replace('</mark>','');
-        console.log(test);
-        if(test.toUpperCase().includes(filter)) {  
-          var capText = test.substring(0, filter.length);
-          console.log('Cap: '+capText);
-          var endText = test.substring(capText.length, sideLinks[i].innerHTML.length);
-          test = '<mark>'+capText+'</mark>'+endText;
-          sideLinks[i].innerHTML = test;
-          if(sisideLinks[i].innerHTML.includes('<mark></mark>')) {
-            sisideLinks[i].innerHTML = '';
-          }
-        }
-      }
     } else {
       li[i].style.display = "none";
     }
