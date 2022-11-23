@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../fontawesome-free-6.2.0-web/css/all.css">
     <script src="../../main.js"></script> 
 </head>
-<body style="background-color: #f7f7f7;">
+<body onload="startupLoad()" style="background-color: #f7f7f7;">
     <nav style="z-index: 1; position: fixed;">
         <img class="nav-logo" src="../../images/logo.png" alt="">
         <div id="nav-links" class="nav-links">
@@ -57,7 +57,7 @@
                     <li>Very intense exercise: 2+ hours of elevated heart rate activity.</li>
                 </ul>
                 <p class="p-quest">How old are you?</p>
-                <input type="text" id="age-input" placeholder="years" class="plan-input">
+                <input type="text" id="age-input" placeholder="years" class="plan-input"><p id="age-error"></p>
                 <p class="p-quest">How much do you weigh?</p>
                 <input type="text" class="plan-input" placeholder="0 lbs" name="" id="lbs-input">
                 <p class="p-quest">How tall are you?</p>
