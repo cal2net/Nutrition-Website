@@ -1,8 +1,0 @@
-create templates for everything
-Change plans page's sliders to a grid with all diets on it
-add footer to home page
-gather info for learn page
-add macro related info
-add diet rating to each diet on plans page and learning diets
-Lastly polish everything up with animations and make pretty with svgs and stuff
-replace every image with royalty free images or your own
