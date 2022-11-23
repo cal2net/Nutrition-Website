@@ -61,6 +61,9 @@ function myFunction() {
           var endText = test.substring(capText.length, sideLinks[i].innerHTML.length);
           test = '<mark>'+capText+'</mark>'+endText;
           sideLinks[i].innerHTML = test;
+          if(sisideLinks[i].innerHTML.includes('<mark></mark>')) {
+            sisideLinks[i].innerHTML = '';
+          }
         }
       }
     } else {
