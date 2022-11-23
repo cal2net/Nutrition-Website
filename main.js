@@ -145,6 +145,9 @@ function lbsToProtein(lbs, weightGoal, cm, age, excercise) {
 function ftTocm(height) {
   console.log(typeof height)
   const fapp = String.fromCharCode(8217);
+  for(n=0;n<height.length;n++){
+    console.log(height.charCodeAt(n));
+  }
   let ft = null;
   if(height.indexOf(fapp)>0){
     ft = height.split(fapp);
@@ -175,6 +178,22 @@ function submit() {
   document.getElementById('form').style.cssText = 'display: none;';
   document.getElementById('results').style.cssText = 'display: block !important;';
 }
+function startupLoad(){
+  ageEntry = document.getElementById('age-input').addEventListener('input', validateAge);
 
+}
+function validateAge(e){
+  console.log(e.target.value)
+  if(isNaN(e.target.value)){
+    document.getElementById('age-error').innerHTML="Only Enter Numbers";
+    return
+  }
+  if(parseInt(e.target.value)>100){
+    document.getElementById('age-error').innerHTML="No old Farts allowed";
+    return
+  }else{
+    document.getElementById('age-error').innerHTML=""
+  } 
+}
 // new let info = lbsToProtein(parseFloat(lbs), parseInt(weightGoal), ftTocm(height.toString()), parseInt(age), parseInt(excercise));
 // old var info = lbsToProtein(lbs, parseInt(weightGoal), ftTocm(height), parseInt(age), parseInt(excercise));
